@@ -23,6 +23,7 @@ class Welcome extends CI_Controller
      */
     public function index()
     {
+        //tes 
         $blade = new Blade(VIEWPATH, APPPATH . 'cache');
         echo $blade->make('form', [])->render();
     }
