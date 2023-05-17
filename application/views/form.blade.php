@@ -36,14 +36,14 @@
       <div class="col-md-6">
         <h2 class="text-body-emphasis">Form Input Data</h2>
         <p>Masukan data yang akan di proses</p>
-        <form method="post" action="">
+        <form method="post" action="{{ site_url('welcome/tampil') }}">
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nama (text only)</label>
-                <input type="text" pattern="[a-zA-Z]*" class="form-control" id="nama" name="nama" aria-describedby="nama" required>
+                <label for="exampleInputEmail1" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" aria-describedby="nama" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">NIM</label>
-                <input type="text" class="form-control" id="nim" name="nim" aria-describedby="NIM" required>
+                <input type="text" class="form-control" id="nim" name="nim" name="NIM"  aria-describedby="nama" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Umur</label>
