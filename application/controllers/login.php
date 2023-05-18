@@ -27,7 +27,7 @@ class login extends CI_Controller
       $nim= $this->input->post ('nim');
       $umur = $this->input->post ('umur');
     
-  
+
 
         $blade = new Blade(VIEWPATH, APPPATH . 'cache');
         echo $blade->make('tampil', ['nama' => $nama])->render();
